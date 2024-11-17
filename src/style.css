@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Noto Sans Symbols";
+  src: url("../fonts/NotoSansSymbols-VariableFont_wght.woff2");
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --c-beet: #624E88;
+  --c-grape: #8967B3;
+  --c-guava: #CB80AB; 
+  --c-light-purple: #F5EFFF; 
+  --c-cream: #E6D9A2;
+  --c-light-cream: #FFF8E8; 
+  --c-darkness: #0C1844; 
+
+
+
+
+  /* Fonts */
+  --f-heading: "Noto Sans Symbols" , sans-serif;
+  --f-body: "Noto Sans Symbols",
+    sans-serif;
+}
+
+
+
+body {
+  margin: 0; 
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: var(--f-body);
+  background-color: var(--c-light-purple);
+}
+
+h1 {
+  font-family: var(--f-heading);
+  font-weight: 400;
+  text-align: center;
+  color: var(--c-beet);
+}
