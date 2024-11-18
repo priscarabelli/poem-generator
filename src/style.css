@@ -155,8 +155,11 @@ footer {
   color: white;
   font-size: 1.2rem;
   line-height: 2;
-  margin: var(--s-l);
+  margin-top: var(--s-l);
+  padding: var(--s-m);
   text-align: center;
-  
 }
 
+.poem strong {
+  color: var(--c-darkness); 
+}
