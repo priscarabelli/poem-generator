@@ -1,42 +1,159 @@
 @font-face {
   font-family: "Noto Sans Symbols";
-  src: url("../fonts/NotoSansSymbols-VariableFont_wght.woff2");
   font-style: normal;
+  src: url("../fonts/NotoSansSymbols-VariableFont_wght.woff2");
 }
 
 :root {
   /* Colors */
   --c-beet: #624E88;
-  --c-grape: #8967B3;
-  --c-guava: #CB80AB; 
-  --c-light-purple: #F5EFFF; 
   --c-cream: #E6D9A2;
-  --c-light-cream: #FFF8E8; 
-  --c-darkness: #0C1844; 
-
-
-
+  --c-darkness: #0C1844;
+  --c-guava: #CB80AB;
+  --c-grape: #8967B3;
+  --c-light-cream: #FBF9F1;
+  --c-light-purple: #F5EFFF;
 
   /* Fonts */
-  --f-heading: "Noto Sans Symbols" , sans-serif;
-  --f-body: "Noto Sans Symbols",
-    sans-serif;
+  --f-body: "Noto Sans Symbols", sans-serif;
+  --f-heading: "Noto Sans Symbols", sans-serif;
+
+  /* Spacing */
+  --s-xs: 0.5rem; 
+  --s-s: 0.8rem;
+  --s-m: 1rem;
+  --s-l: 1.5rem;
+  --s-xl: 2.5rem;  
+
+  /* Border-radius */
+  --border-radius-m: 10px;
+  --border-radius-s: 5px; 
+}
+
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--c-light-cream);
+  background-image: url(../images/stardust.png);
+  color: var(--c-darkness);
+  font-family: var(--f-body);
+  height: 100vh;
+  line-height: 1.5;
 }
 
 
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
-body {
-  margin: 0; 
-  display: grid;
-  place-content: center;
-  height: 100vh;
-  font-family: var(--f-body);
-  background-color: var(--c-light-purple);
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
 
 h1 {
+  color: var(--c-light-purple);
   font-family: var(--f-heading);
   font-weight: 400;
   text-align: center;
-  color: var(--c-beet);
 }
+
+.container {
+  border-radius: var(--border-radius-m);
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  width: 50%;
+  padding: var(--s-xl);
+  place-content: center;
+  background-color: var(--c-beet);
+
+/* Center the container on the page */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  bottom: 0;
+  left: 50%;
+  margin: var(--s-l);
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+
+#prompt {
+  background-color: var(--c-light-purple);
+  border: 2px solid var(--c-grape);
+  border-radius: var(--border-radius-s);
+  color: var(--c-beet);
+  height: 30px;
+  margin: var(--s-m) 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+#submit {
+  background-color:  var(--c-light-purple);
+  border: 1px solid var(--c-guava);
+  border-radius: var(--border-radius-s);
+  color: var(--c-beet);
+  height: 30px;
+  margin: var(--s-m) 0;
+  width: 100%;
+}
+
+.poem-generated {
+  color: var(--c-light-purple);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
