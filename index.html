@@ -7,26 +7,27 @@
   <title>AI Poem Generator</title>
 </head>
 <body>
-  <main class="container">
-    <h1>Welcome to AI Poem Generator!</h1>
+  <div class="container">
+    <h1>AI Poem Generator </h1>
+      <section>
+        <form action="">
+          <input type="text" 
+          placeholder="Enter prompt to generate poem" 
+          id="prompt" 
+          autofocus
+          required 
+          autocomplete="off">
+          <input type="submit" 
+          id="submit">
+        </form>
 
-    <section>
-      <form action="">
-        <input type="text" 
-        placeholder="Enter prompt to generate poem" 
-        id="prompt" 
-        autofocus
-        required 
-        autocomplete="off">
-        <input type="submit" 
-        id="submit">
-      </form>
-
-      <div class="poem-generated">
-        The generated poem will go here! 
-      </div>
-    </section>
-  </main>
+        <div class="poem">
+          The generated poem will go here.
+          <br />
+          Hopefully it will be romantic! 
+        </div>
+      </section>
+  </div>
 
   <footer>This project was coded by
     <a href="https://www.linkedin.com/in/priscilla-scarabelli-uk/" target="_blank" rel="noopener noreferrer">Pri Scarabelli</a>

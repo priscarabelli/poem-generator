@@ -15,11 +15,10 @@
   --c-light-purple: #F5EFFF;
 
   /* Fonts */
-  --f-body: "Noto Sans Symbols", sans-serif;
-  --f-heading: "Noto Sans Symbols", sans-serif;
+  --f-family: "Noto Sans Symbols", sans-serif;
 
   /* Spacing */
-  --s-xs: 0.5rem; 
+  --s-xs: 0.4rem; 
   --s-s: 0.8rem;
   --s-m: 1rem;
   --s-l: 1.5rem;
@@ -46,7 +45,7 @@ body {
   background-color: var(--c-light-cream);
   background-image: url(../images/stardust.png);
   color: var(--c-darkness);
-  font-family: var(--f-body);
+  font-family: var(--f-family);
   height: 100vh;
   line-height: 1.5;
 }
@@ -95,28 +94,29 @@ h6 {
   text-wrap: balance;
 }
 
+a {
+  color: var(--c-guava);
+}
+
 h1 {
-  color: var(--c-light-purple);
-  font-family: var(--f-heading);
-  font-weight: 400;
+  color: var(--c-darkness);
+  font-weight: 700;
+  margin: var(--s-l);
   text-align: center;
 }
 
 .container {
+ margin: 10rem auto;
+ max-width: 600px;
+}
+
+form {
+  align-items: center;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.6);
+  background-color: var(--c-darkness);
   border-radius: var(--border-radius-m);
   display: flex;
-  flex-direction: column;
-  height: 50rem;
-  width: 50%;
   padding: var(--s-xl);
-  place-content: center;
-  background-color: var(--c-beet);
-
-/* Center the container on the page */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 footer {
@@ -128,32 +128,35 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-
 #prompt {
-  background-color: var(--c-light-purple);
-  border: 2px solid var(--c-grape);
-  border-radius: var(--border-radius-s);
-  color: var(--c-beet);
+  border: 1px solid var(--c-guava);
+  border-radius: 50px;
+  color: var(--c-darkness);
   height: 30px;
-  margin: var(--s-m) 0;
-  text-align: center;
-  width: 100%;
+  line-height: 1rem;
+  padding: var(--s-m);
+  width: 80%;
 }
 
 
 #submit {
-  background-color:  var(--c-light-purple);
-  border: 1px solid var(--c-guava);
-  border-radius: var(--border-radius-s);
-  color: var(--c-beet);
-  height: 30px;
-  margin: var(--s-m) 0;
-  width: 100%;
+  background-color:  var(--c-guava);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: var(--s-xs);
+  margin-left: var(--s-s) ;
+  width: 150px;
 }
 
-.poem-generated {
-  color: var(--c-light-purple);
-  font-size: 1.5rem;
+.poem {
+  background-color: var(--c-guava);
+  border-left: 2px solid var(--c-darkness);
+  color: white;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: var(--s-l);
   text-align: center;
+  
 }
 
