@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Noto Sans Symbols";
+  font-family: 'Noto Sans Symbols';
   font-style: normal;
-  src: url("../fonts/NotoSansSymbols-VariableFont_wght.woff2");
+  src: url('../fonts/NotoSansSymbols-VariableFont_wght.woff2');
 }
 
 :root {
@@ -11,18 +11,18 @@
   --c-light-cream: #fbf9f1;
 
   /* Fonts */
-  --f-family: "Noto Sans Symbols", sans-serif;
+  --f-family: 'Noto Sans Symbols', sans-serif;
 
   /* Spacing */
-  --s-xs: 0.4rem; 
+  --s-xs: 0.4rem;
   --s-s: 0.8rem;
   --s-m: 1rem;
   --s-l: 1.5rem;
-  --s-xl: 2.5rem;  
+  --s-xl: 2.5rem;
 
   /* Border-radius */
   --border-radius-m: 10px;
-  --border-radius-s: 5px; 
+  --border-radius-s: 5px;
 }
 
 /* Use a more-intuitive box-sizing model */
@@ -101,11 +101,6 @@ h1 {
   text-align: center;
 }
 
-.container {
- margin: 10rem auto;
- max-width: 600px;
-}
-
 form {
   background-color: rgba(203, 128, 171, 0.8);
   border-radius: var(--border-radius-m);
@@ -131,8 +126,14 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.container {
+  margin: 10rem auto;
+  max-width: 600px;
+}
+
 .social {
   font-size: 1.5rem;
+  color: var(--c-guava);
 }
 
 #prompt {
@@ -158,7 +159,7 @@ footer {
 }
 
 #submit:hover {
-  background-color: rgb(12, 24, 68, 0.8);;
+  background-color: rgb(12, 24, 68, 0.8);
 }
 
 .poem {
