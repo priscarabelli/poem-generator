@@ -162,7 +162,7 @@ footer {
   background-color: rgb(12, 24, 68, 0.8);
 }
 
-.poem {
+.generated-poem {
   background-color: rgba(203, 128, 171, 0.8);
   border-radius: var(--border-radius-s);
   box-shadow: 0px 8px 20px rgba(203, 128, 171, 0.6);
@@ -173,7 +173,7 @@ footer {
   padding: var(--s-m);
 }
 
-.poem strong {
+.generated-poem strong {
   color: var(--c-darkness);
 }
 
